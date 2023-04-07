@@ -40,13 +40,13 @@
 // Node JS -> modular system
 
 // (function () {
-console.log(10);
+// console.log(10);
 
-function display() {
-  console.log(20);
-}
+// function display() {
+//   console.log(20);
+// }
 
-display();
+// display();
 // })();
 // IIFE -> Immediately Invoked Function expression
 
@@ -57,5 +57,10 @@ display();
 // modules -> each and every JS file forms a module
 // console.log(module);
 
-// const axios = require("axios");
-// const blog = require("./blog.js");
+// const logger = require("./logger");
+// const { add, sub } = require("./logger");
+
+// // console.log("logger", logger.add(5, 10));
+// console.log("add", add(5, 10));
+// console.log("sub", sub(15, 10));
+// console.log("global----", global);
