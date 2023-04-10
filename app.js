@@ -64,3 +64,19 @@
 // console.log("add", add(5, 10));
 // console.log("sub", sub(15, 10));
 // console.log("global----", global);
+
+// Singleton Pattern
+const express = require("express");
+// const { log } = require("./logger");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.write("Welcome to Express");
+  //   res.end();
+});
+
+app.get("/students", (req, res) => {
+  res.send(["vasanth", "mohd", "aditya"]);
+});
+
+app.listen(3000, () => console.log("server is running on 3000...."));
